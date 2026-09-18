@@ -1,0 +1,113 @@
+/* Style global de la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d1d5db;
+}
+
+/* En-tête (Image de fond bleue + texte à droite) */
+.cv-header {
+    background: #002b5c url('chemin_vers_ton_image_binaire.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(240, 54, 8);
+    height: 160px;
+    position: relative;
+}
+
+.header-right {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    text-align: right;
+}
+
+.header-right h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.header-right h2 {
+    margin: 4px 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.header-right p {
+    margin: 2px 0;
+    font-size: 12px;
+    color: #111fee;
+}
+
+/* Barre de navigation */
+.cv-nav {
+    background-color: #0b132b;
+    padding: 6px 40px;
+}
+
+.cv-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.cv-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.cv-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Corps principal et gestion des 2 colonnes */
+.cv-body {
+    padding: 30px 40px;
+}
+
+.cv-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.cv-left {
+    flex: 2; /* Prend plus de place à gauche */
+}
+
+.cv-right {
+    flex: 1; /* Prend moins de place à droite */
+    border-left: 1px solid #9ca3af; /* La ligne de séparation verticale */
+    padding-left: 30px;
+}
+
+/* Style des titres de sections */
+section h3 {
+    font-size: 15px;
+    border-bottom: 1px solid #9ca3af;
+    padding-bottom: 4px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+section p {
+    font-size: 13px;
+    margin: 6px 0;
+}
+
+/* Couleur bleue pour les dates */
+section p span {
+    color: #1d4ed8; 
+}
+
+/* Pied de page */
+.cv-footer {
+    background-color: #0b132b;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 11px;
+}
